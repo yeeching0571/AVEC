@@ -71,7 +71,8 @@ class Adam(optim.Adam):
     def step(self, closure=None):
         lr = self.scheduler.step()
         for group in self.param_groups:
-            group['lr'] = lr
+            # group['lr'] = lr
+            group['lr'] = lr.item()
         return super(Adam, self).step(closure)
 
     def state_dict(self):

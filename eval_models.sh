@@ -1,7 +1,6 @@
 
 echo Evaluate Audio-Visual Model
 python main.py -c configs/LRS23/AV/EffConfInterCTC.py --mode evaluation --checkpoint checkpoints_swa-equal-60-70.ckpt
-echo
 
 echo Evaluate Visual-Only Model
 python main.py -c configs/LRS23/VO/EffConfInterCTC.py --mode evaluation --checkpoint checkpoints_swa-equal-90-100.ckpt

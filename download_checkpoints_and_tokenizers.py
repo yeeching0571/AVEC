@@ -3,31 +3,31 @@ import os
 
 # Gdrive Ids
 repo_files = {
-    "Audio-Only Efficient Conformer CTC checkpoint": {
-        "gdrive_id": "1TPlqoSythY90xJrZRquJmMUwK4sVeAHc",
-        "dir_path": "callbacks/LRS23/AO/EffConfCTC",
-        "filename": "checkpoints_swa-equal-200-210.ckpt"
-    },
-    "Visual-Only Efficient Conformer Inter CTC checkpoint": {
-        "gdrive_id": "1bq3Eh8zDfUK7iWG3hLd5xuorWal1krnb",
-        "dir_path": "callbacks/LRS23/VO/EffConfInterCTC",
-        "filename": "checkpoints_swa-equal-90-100.ckpt"
-    },
-    "Audio-Visual Efficient Conformer Inter CTC checkpoint": {
-        "gdrive_id": "1kE3HDPhnG04Zysb1RZiwNaxrVUofLRk7",
-        "dir_path": "callbacks/LRS23/AV/EffConfInterCTC",
-        "filename": "checkpoints_swa-equal-60-70.ckpt"
-    },
-    "TransformerLM checkpoint": {
-        "gdrive_id": "1PSo4ZQIZPWEI_S5LHkJBo0gYhQpWzRnh",
-        "dir_path": "callbacks/LRS23/LM/GPT-Small",
-        "filename": "checkpoints_epoch_10_step_2860.ckpt"
-    },
-    "TransformerLM pre-trained checkpoint": {
-        "gdrive_id": "1V4-GMlh8dh0LXYniZb72pYqgBkVdpND6",
-        "dir_path": "callbacks/LibriSpeechCorpus/GPT-Small",
-        "filename": "checkpoints_epoch_13_step_512924.ckpt"
-    },
+    # "Audio-Only Efficient Conformer CTC checkpoint": {
+    #     "gdrive_id": "1TPlqoSythY90xJrZRquJmMUwK4sVeAHc",
+    #     "dir_path": "callbacks/LRS23/AO/EffConfCTC",
+    #     "filename": "checkpoints_swa-equal-200-210.ckpt"
+    # },
+    # "Visual-Only Efficient Conformer Inter CTC checkpoint": {
+    #     "gdrive_id": "1bq3Eh8zDfUK7iWG3hLd5xuorWal1krnb",
+    #     "dir_path": "callbacks/LRS23/VO/EffConfInterCTC",
+    #     "filename": "checkpoints_swa-equal-90-100.ckpt"
+    # },
+    # "Audio-Visual Efficient Conformer Inter CTC checkpoint": {
+    #     "gdrive_id": "1kE3HDPhnG04Zysb1RZiwNaxrVUofLRk7",
+    #     "dir_path": "callbacks/LRS23/AV/EffConfInterCTC",
+    #     "filename": "checkpoints_swa-equal-60-70.ckpt"
+    # },
+    # "TransformerLM checkpoint": {
+    #     "gdrive_id": "1PSo4ZQIZPWEI_S5LHkJBo0gYhQpWzRnh",
+    #     "dir_path": "callbacks/LRS23/LM/GPT-Small",
+    #     "filename": "checkpoints_epoch_10_step_2860.ckpt"
+    # },
+    # "TransformerLM pre-trained checkpoint": {
+    #     "gdrive_id": "1V4-GMlh8dh0LXYniZb72pYqgBkVdpND6",
+    #     "dir_path": "callbacks/LibriSpeechCorpus/GPT-Small",
+    #     "filename": "checkpoints_epoch_13_step_512924.ckpt"
+    # },
     "Tokenizer model": {
         "gdrive_id": "1u3U3aHaTWvR_NTftkUGv1JXkxpX1pkOL",
         "dir_path": "datasets/LRS3",

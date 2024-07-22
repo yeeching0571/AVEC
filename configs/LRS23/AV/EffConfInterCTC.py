@@ -50,7 +50,7 @@ neural_alpha = 0.6
 neural_beta = 1.0
 
 # Training
-batch_size = 16
+batch_size = 4
 accumulated_steps = 4
 eval_training = False
 precision = torch.float16
@@ -100,15 +100,15 @@ training_dataset = nnet.datasets.MultiDataset(
         video_transform=training_video_transform,
         align=align
     ),
-    nnet.datasets.LRS(
-        batch_size=None,
-        collate_fn=None,
-        version="LRS3",
-        mode="pretrain+trainval",
-        video_max_length=video_max_length,
-        video_transform=training_video_transform,
-        align=align
-    )
+    # nnet.datasets.LRS(
+    #     batch_size=None,
+    #     collate_fn=None,
+    #     version="LRS3",
+    #     mode="pretrain+trainval",
+    #     video_max_length=video_max_length,
+    #     video_transform=training_video_transform,
+    #     align=align
+    # )
 ])
 
 evaluation_dataset = [
@@ -120,12 +120,12 @@ evaluation_dataset = [
         video_transform=evaluation_video_transform,
         align=align
     ),
-    nnet.datasets.LRS(
-        batch_size=batch_size,
-        collate_fn=collate_fn,
-        version="LRS3",
-        mode="test",
-        video_transform=evaluation_video_transform,
-        align=align
-    )
+    # nnet.datasets.LRS(
+    #     batch_size=batch_size,
+    #     collate_fn=collate_fn,
+    #     version="LRS3",
+    #     mode="test",
+    #     video_transform=evaluation_video_transform,
+    #     align=align
+    # )
 ]

@@ -44,7 +44,7 @@ training_dataset = nnet.datasets.CorpusLM(
     batch_size=batch_size,
     tokenizer_path=tokenizer_path,
     max_length=label_max_length,
-    corpus_path="datasets/LRS3/corpus_lrs23_pretrain+train+val.txt"
+    corpus_path="datasets/LRS2/corpus_lrs23_pretrain+train+val.txt"
 )
 evaluation_dataset = [
     nnet.datasets.CorpusLM(
@@ -53,10 +53,10 @@ evaluation_dataset = [
         tokenizer_path=tokenizer_path,
         corpus_path="datasets/LRS2/corpus_test.txt"
     ),
-    nnet.datasets.CorpusLM(
-        collate_fn=collate_fn,
-        batch_size=batch_size,
-        tokenizer_path=tokenizer_path,
-        corpus_path="datasets/LRS3/corpus_test.txt"
-    )
+    # nnet.datasets.CorpusLM(
+    #     collate_fn=collate_fn,
+    #     batch_size=batch_size,
+    #     tokenizer_path=tokenizer_path,
+    #     corpus_path="datasets/LRS3/corpus_test.txt"
+    # )
 ]

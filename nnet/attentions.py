@@ -303,10 +303,12 @@ class RelPos1dMultiHeadAttention(MultiHeadAttention):
 
         # Apply mask
         if mask is not None:
-            att_scores += (mask.logical_not() * -1e9)
+            # att_scores += (mask.logical_not() * -1e9)
+            att_scores = att_scores.float() + (mask.logical_not().float() * -1e9)
 
         # Att weights (B, h, T, T)
-        att_w = att_scores.softmax(dim=-1)
+        # att_w = att_scores.softmax(dim=-1)
+        att_w = att_scores.softmax(dim=-1).type(Q.dtype)
 
         # Att Dropout
         att_w = self.dropout(att_w)
