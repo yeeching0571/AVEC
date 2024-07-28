@@ -1,0 +1,7 @@
+face_alignment/
+ctcdecode/
+face_detection/
+datasets/
+callbacks/
+callbacks_backup/
+checkpoints_swa-equal-60-70.ckpt
